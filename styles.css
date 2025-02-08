@@ -1,0 +1,91 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Sacramento&display=swap');
+
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom right, #ffd6e0, #ffb3c6);
+    color: #5c3d2e;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background: rgba(255, 182, 193, 0.8);
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-button {
+    font-size: 24px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+}
+
+ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #5c3d2e;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: #ff6b81;
+}
+
+.hidden {
+    display: none;
+}
+
+.content {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 48px;
+}
+
+p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.flower-animation {
+    width: 100px;
+    height: 100px;
+    background: url('https://cdn.pixabay.com/photo/2017/02/01/10/31/pink-2020867_960_720.png') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
